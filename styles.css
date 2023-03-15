@@ -1,0 +1,91 @@
+html {
+    font-size: 16px;
+}
+
+header {
+    background-image: url(https://unsplash.it/1200/600);
+    background-position: center;
+    background-size: cover;
+    height: 15rem;
+    margin: 0 auto;
+}
+
+.products {
+    background-color: blanchedalmond;
+}
+
+footer {
+    background-color: teal;
+}
+
+.title {
+    font-size: 2rem;
+    color: white;
+}
+
+.tagline {
+    font-size: 2rem;
+    font-family: cursive;
+    color: white;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-left: 3rem;
+}
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.products-container article {
+    background-image: url(https://unsplash.it/600/400); 
+    background-position: center;
+    background-size: cover;
+    border: 0.25rem solid lightblue;
+    border-radius: 2rem;
+    padding: 0.5rem 0.5rem;
+    margin: 2rem;
+    width: 36rem;
+    height: 24rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+.products-container p {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
+.biographies-container {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+}
+
+.biographies-container article {
+    width: 50%;
+    height: 300px;
+    padding: 2rem;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.biographies-container p {
+    text-indent: 1rem;
+}
+
+.biographies-container img {
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.biographies-container article, img {
+    margin-bottom: 4rem;
+}
