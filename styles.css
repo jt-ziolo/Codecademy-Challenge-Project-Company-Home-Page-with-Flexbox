@@ -1,3 +1,27 @@
+.serif,
+p,
+a {
+  font-family: "Bitter", "Palatino", "Palatino Linotype", "Palatino LT STD",
+    "Book Antiqua", "Georgia", serif;
+}
+
+.sans,
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Inter", "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+}
+
+.monospace {
+  font-family: "Cutive Mono", "Lucida Sans Typewriter", "Lucida Console",
+    "monaco", "Bitstream Vera Sans Mono", monospace;
+}
+
+.cursive {
+  font-family: "Dancing Script", "Brush Script MT", cursive;
+}
+
 html {
   font-size: 18px;
 }
@@ -11,7 +35,7 @@ html {
 
 nav {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   align-items: center;
   justify-content: space-between;
   background-color: darkslateblue;
@@ -56,7 +80,6 @@ footer {
   margin-left: 3rem;
   margin-top: 5rem;
   font-size: 2rem;
-  font-family: cursive;
   color: white;
 }
 
@@ -101,6 +124,11 @@ h3 {
   margin-left: 1rem;
 }
 
+.products-container a {
+  color: black;
+  text-decoration-line: none;
+}
+
 .biographies-container {
   display: flex;
   flex-wrap: wrap;
@@ -116,13 +144,20 @@ h3 {
   border-bottom: 2px solid black;
 }
 
+@media screen and (max-width: 900px) {
+  .biographies-container article {
+    width: 90%;
+    border-right: 2px solid black;
+  }
+}
+
 .biographies-container p {
   text-indent: 1rem;
 }
 
 .biographies-container img {
   border: 2px solid black;
-  width: 300px;
+  min-width: 300px;
 }
 
 .biographies-container article,
@@ -135,14 +170,15 @@ footer {
 }
 
 footer h4 {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
-footer p, footer h4 {
+footer p,
+footer h4 {
   margin-left: 1rem;
   color: white;
 }
 
 footer a {
-    color: lightblue;
+  color: lightblue;
 }
