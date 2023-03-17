@@ -1,91 +1,148 @@
 html {
-    font-size: 16px;
-}
-
-header {
-    background-image: url(https://unsplash.it/1200/600);
-    background-position: center;
-    background-size: cover;
-    height: 15rem;
-    margin: 0 auto;
-}
-
-.products {
-    background-color: blanchedalmond;
-}
-
-footer {
-    background-color: teal;
+  font-size: 18px;
 }
 
 .title {
-    font-size: 2rem;
-    color: white;
+  display: inline-block;
+  font-size: 2rem;
+  color: white;
+  margin-left: 3rem;
+}
+
+nav {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: darkslateblue;
+  border: 1px solid white;
+}
+
+nav li {
+  display: inline-block;
+  text-align: right;
+  margin-right: 5rem;
+  background-color: white;
+  padding: 0.5rem;
+  border: 0.2rem solid paleturquoise;
+  border-radius: 1rem;
+}
+
+nav a {
+  color: black;
+  text-decoration-line: none;
+  font-size: 1.25rem;
+}
+
+header {
+  background-image: url(https://unsplash.it/1200/400/?blur);
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  margin: 0 auto;
+}
+
+#products {
+  background-color: blanchedalmond;
+}
+
+#team,
+#products,
+footer {
+  border: 1px solid darkslategray;
 }
 
 .tagline {
-    font-size: 2rem;
-    font-family: cursive;
-    color: white;
+  margin-left: 3rem;
+  margin-top: 5rem;
+  font-size: 2rem;
+  font-family: cursive;
+  color: white;
 }
 
 h2 {
-    font-size: 3rem;
-    margin-left: 3rem;
+  font-size: 3rem;
+  margin-left: 3rem;
+  padding: 4rem 0 1rem 0;
 }
 
 .products-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 4rem;
 }
 
 .products-container article {
-    background-image: url(https://unsplash.it/600/400); 
-    background-position: center;
-    background-size: cover;
-    border: 0.25rem solid lightblue;
-    border-radius: 2rem;
-    padding: 0.5rem 0.5rem;
-    margin: 2rem;
-    width: 36rem;
-    height: 24rem;
+  background-color: paleturquoise;
+  background-position: center;
+  background-size: cover;
+  border: 0.25rem solid lightblue;
+  border-radius: 2rem;
+  padding: 0.5rem 0.5rem;
+  margin: 2rem;
+  width: 36rem;
+  height: 300px;
+}
+
+.products-container img {
+  float: left;
+  margin-right: 1rem;
+  border-radius: 2rem;
 }
 
 h3 {
-    font-size: 2rem;
+  margin-top: 1rem;
+  font-size: 2rem;
 }
 
 .products-container p {
-    font-size: 1.5rem;
-    margin-left: 1rem;
+  font-size: 1.25rem;
+  margin-left: 1rem;
 }
 
 .biographies-container {
-    display: flex;
-    flex-wrap: wrap-reverse;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 .biographies-container article {
-    width: 50%;
-    height: 300px;
-    padding: 2rem;
-    border-left: 2px solid black;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
+  width: 50%;
+  padding: 1rem;
+  border-left: 2px solid black;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
 .biographies-container p {
-    text-indent: 1rem;
+  text-indent: 1rem;
 }
 
 .biographies-container img {
-    border-right: 2px solid black;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
+  border: 2px solid black;
+  width: 300px;
 }
 
-.biographies-container article, img {
-    margin-bottom: 4rem;
+.biographies-container article,
+img {
+  margin-bottom: 4rem;
+}
+
+footer {
+  background-color: darkcyan;
+}
+
+footer h4 {
+    font-size: 1.5rem;
+}
+
+footer p, footer h4 {
+  margin-left: 1rem;
+  color: white;
+}
+
+footer a {
+    color: lightblue;
 }
